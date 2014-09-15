@@ -1,0 +1,13 @@
+<div class="container">
+	<div class="fakeImage"><img class="artImage" src="{{work.url}}"></div>
+
+	<table class="artInfo">
+		<tr ng-repeat="result in results">
+			<td>{{result.type}}</td><td>{{result.value}}</td>
+		</tr>
+	</table>
+
+	<button class="likeButtonClass" ng-click="like()">Like</a> 
+  <button class="unlikeButtonClass" ng-click="unlike()">Unlike</a>
+
+</div>

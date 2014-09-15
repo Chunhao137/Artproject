@@ -12,7 +12,7 @@ module.exports = function(app, express){
     resave: true,
     saveUninitialized: true
   }));
-  app.use(express.static(path.join(__dirname, '../client/www')));
+  app.use(express.static(path.join(__dirname, '../client')));
 
   require('./handler.js')(app);
 }
